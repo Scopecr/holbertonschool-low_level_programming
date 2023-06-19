@@ -11,9 +11,9 @@ int main(void)
 {
 	int i;
 
-	for (i = 25; i >= 0; i--)
+	for (i = 'z'; i >= 'a'; i--)
 	{
-		putchar(i + 'a');
+		putchar(i);
 	}
 	putchar('n');
 
