@@ -1,25 +1,17 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - entry point
- *
- * char alphabet - variable for printing
- *
- * putchar - prints
+ * print_alphabet - Make the aphabet
  *
  * Return: always 0 success
  */
-int main(void)
+void print_alphabet(void)
 {
-	char alphabet = 'a';
+	char letter;
 
-	while (alphabet <= 'z')
-	{
-	_putchar(alphabet);
-	alphabet++;
-	}
+	for (letter = 'a'; letter <= 'z'; letter++)
+		_putchar(letter);
 
 	_putchar('\n');
 
-	return (0);
 }
