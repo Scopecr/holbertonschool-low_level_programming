@@ -7,9 +7,6 @@
  */
 int main(void)
 {
-	char message[] = "_putchar\n";
-
-	write(STDOUT_FILENO, message, sizeof(message) - 1);
-
-	return (0);
+	_putchar("_");
+	return (0)
 }
