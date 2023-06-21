@@ -7,15 +7,12 @@
  *
  * Return: 0 success no lower case
  */
-
-int main(void)
-	{
 	int _islower(int C)
 
 		if (c >= 'a' && c <= 'z')
 	{
 		return (1);
+	
+		return (0);
 	}
-	return (0);
-}
 
