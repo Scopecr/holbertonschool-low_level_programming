@@ -9,6 +9,6 @@
 int print_last_digit(int i)
 {
 	if (i % 10)
-		printf("%d is the last digit of 10");
-	return (i);
+		_putchar(i);
+		return (i);
 }
