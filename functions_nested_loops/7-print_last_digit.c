@@ -6,11 +6,9 @@
  *
  * Return: back to i for the value of the last digit
  */
-int print_last_digit(int i)
-{
+int print_last_digit(int i){
 	if (i % 10)
 	{
 		_putchar(i);
 		return (i);
 	}
-}
