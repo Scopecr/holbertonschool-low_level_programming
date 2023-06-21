@@ -3,7 +3,7 @@
 /**
  * islower - identifies the lower case ad promps to return1
  *
- * Return: 1 if lower case found
+ *c - variable to specify the action
  *
  * Return: 0 success no lower case
  */
