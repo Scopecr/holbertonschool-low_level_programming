@@ -7,7 +7,7 @@
  *
  * Return: 0 success no lower case
  */
-	int _islower(int C)
+	int _islower(int c)
 
 		if (c >= 'a' && c <= 'z')
 	{
