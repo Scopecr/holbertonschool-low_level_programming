@@ -8,11 +8,11 @@
  * Return: 0 success no lower case
  */
 	int _islower(int c)
-
+{
 		if (c >= 'a' && c <= 'z')
 	{
 		return (1);
 	}
 		return (0);
 
-
+}
