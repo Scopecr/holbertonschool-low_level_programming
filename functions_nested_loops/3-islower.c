@@ -1,9 +1,9 @@
 #include "main.h"
 #include <ctype.h>
 /**
- * islower - identifies the lower case ad promps to return1
+ * _islower - identifies the lower case ad promps to return1
  *
- *c - variable to specify the action
+ * @c: variable to specify the action
  *
  * Return: 0 success no lower case
  */
