@@ -1,4 +1,3 @@
-all: main.c school.c
-	SRC main.c school.c -o school
-all: m.h
-	gcc m.h
+SRC := main.c school.c
+all: $(SRC)
+	gcc main.c school.c -o school
