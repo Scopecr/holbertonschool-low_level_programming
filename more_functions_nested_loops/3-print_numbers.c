@@ -13,8 +13,8 @@ void print_numbers(void)
 
 	{
 
-		_putchar(i + '0');
-		i++;
+	_putchar(i + '0');
+	i++;
 
 	}
 
