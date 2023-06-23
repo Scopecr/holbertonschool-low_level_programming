@@ -11,6 +11,7 @@ int _isupper(int c)
         }
         else
         {
+            printf("\n");
             return (0);
         }
 }
