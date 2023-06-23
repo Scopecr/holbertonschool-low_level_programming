@@ -3,16 +3,11 @@
 
 int _isupper(int c)
 {
-    int c; 
 
-        if (c = 'A'; c <='Z'; c++)
-        {
-            printf("%d",c);
+    if (c = 'A') && (c <='Z')
+       {
             return (1);
-        }
-        else
-        {
-            printf("\n");
+
             return (0);
         }
 }
