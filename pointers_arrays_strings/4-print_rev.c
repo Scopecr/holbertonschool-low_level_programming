@@ -1,5 +1,11 @@
 #include "main.h"
-
+#include <stdio.h>
+/**
+ * print_rev a string reverse
+ * @s: string input
+ *
+ * Return: void
+ */
 void print_rev(char *s)
 {
 	int end, length =0;
