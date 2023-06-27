@@ -1,5 +1,10 @@
 #include "main.h"
 /**
+ *puts2 - prints every other charater
+ *
+ *@str: is the string to be printed
+ *
+ *Return: void
  */
 void puts2(char *str)
 {
