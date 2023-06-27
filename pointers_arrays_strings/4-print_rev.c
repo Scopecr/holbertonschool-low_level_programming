@@ -2,63 +2,18 @@
 
 void print_rev(char *s)
 {
-	int i, j, len;
-	
-	i=0;
+	int end, length =0
 
-	while (s[i] != '\0')
-	{
-		i++;
-	}
+		while (s[lenght] !='\0')
+		{
+			length++;
+		}
+		end = length -1;
 
-	len = i;
-
-	for (j =len - 1; j >=0; j--)
-	{
-		_putchar(s[j]);
-	}
-
-	_puytchar('\n');
-}#include "main.h"
-
-void print_rev(char *s)
-{
-	int i, j, len;
-	
-	i=0;
-
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-
-	len = i;
-
-	for (j =len - 1; j >=0; j--)
-	{
-		_putchar(s[j]);
-	}
-
-	_puytchar('\n');
-}#include "main.h"
-
-void print_rev(char *s)
-{
-	int i, j, len;
-	
-	i=0;
-
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-
-	len = i;
-
-	for (j =len - 1; j >=0; j--)
-	{
-		_putchar(s[j]);
-	}
-
-	_puytchar('\n');
+		while (end >=0)
+		{
+			_putchar(s[end]);
+			end--;
+		}
+	_putchar('\n');
 }
