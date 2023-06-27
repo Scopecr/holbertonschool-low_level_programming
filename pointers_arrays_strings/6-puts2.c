@@ -5,10 +5,9 @@
 void puts2(char *str)
 {
 
-	while (*str != '\0')
+	for (*str = 0; *str != '\0'; *str + 2)
 	{
 		_putchar(*str);
-		*str++;
 	}
 	_putchar('\n');
 }
