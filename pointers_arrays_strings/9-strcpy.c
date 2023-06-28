@@ -1,8 +1,12 @@
 #include "main.h"
 /**
- * strcopy- function that copy dest to src
+ * _strcpy - function that copy dest to src
  *
- * Reruen: temp for the string to print twice
+ * @dest: the variables to be copy
+ *
+ * @src: variable to be copy
+ *
+ * Return: temp for the string to print twice
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -12,6 +16,7 @@ char *_strcpy(char *dest, char *src)
 	{
 		*dest++ = *src++;
 	}
+	*dest = '\0';
 	return (temp);
 }
 
