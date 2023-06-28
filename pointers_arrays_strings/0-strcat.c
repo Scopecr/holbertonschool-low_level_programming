@@ -1,18 +1,22 @@
 #include "main.h"
+/**
+ * _strcat - function that change variable
+ *
+ * @dest: car type string
+ * @src: char type string
+ *
+ * Return: Pointer to dest
+ */
 
 char *_strcat(char *dest, char *src)
 {
-	char *i = dest;
-	char *j = src;
-	
-	if (i > j)
+	int i;
+
+	for (i = 0; src[i] != '\0'; i++)
 	{
-		_putchar(j > i);
+		dest[i] = src[i];
 	}
-	else
-	{
-		_putchar('\0');
-	}
-	return (i);
+	dest[i] = '\0';
+
+	return (dest);
 }
-	
