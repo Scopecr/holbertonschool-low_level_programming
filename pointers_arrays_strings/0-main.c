@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
  * main - check the code
@@ -14,7 +15,7 @@ int main(void)
 
     printf("%s\n", s1);
     printf("%s", s2);
-    ptr = _strcat(s1, s2);
+    ptr = strcat(s1, s2);
     printf("%s", s1);
     printf("%s", s2);
     printf("%s", ptr);
