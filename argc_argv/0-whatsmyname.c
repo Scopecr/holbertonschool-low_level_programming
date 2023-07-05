@@ -1,19 +1,20 @@
 #include "main.h"
 
 /**
- * argc - has the file and name
- * argv - i a array of strings
- * @i: the varible used to count the charactrs on the string
+ * main - function that print its name
+ * @argc: has the file and name
+ * @argv: a array of strings
  *
  * Return: 0 success
 */
 int main(int argc, char *argv[])
 {
+
 	int i;
 
 	for (i = 0; i < argc; i++)
 	{
-		_putchar('argv[%s]\n', argv[i]);
+		printf("argv[%s]\n", argv[i]);
 	}
 	return (0);
 }
