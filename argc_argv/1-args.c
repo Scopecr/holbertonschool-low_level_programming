@@ -3,7 +3,7 @@
  * main - program that prints the number of argunments
  * @argc: variable that holds the program name executable
  * @argv: array that holds the string of program
- * 
+ *
  * Return: 0 success
  */
 
