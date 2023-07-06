@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	int i = 1, result = 1;
 
-	if (argc < 2)
+	if (argc <= 2)
 	{
 		printf("Error\n");
 		return (1);
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		{
 			result *= strtol(argv[i], NULL, 10);
 		}
-		printf("%d]n", result);
+		printf("%d\n", result);
 	}
 	return (0);
 }
