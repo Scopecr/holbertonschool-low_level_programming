@@ -1,21 +1,49 @@
 #include "main.h"
-#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
 /**
- * *str_concat concatenates two strings
- * @s1: first string
- * @s2: second sring
- * @len1: checks for length of s1
- * @len2: checks for lenght of s2
- * Return: Null if failure, new_str of sting
+ * _strlen - return length of a string
+ *
+ * @s: char type
+ * Return:  length of string
+ */
+int _strlen(char *s)
+{
+	int a;
+
+	for (a = 0; s[a] != '\0'; a++)
+		;
+	return (a);
+}
+/**
+ * _strncat - function to concatnate strings with n bytes
+ *
+ * @dest: destination for concatnation
+ * @src: source of string
+ * @n: int type for size of byte
+ * Return: dest
+ */
+char *_strncat(char *dest, char *src, int n)
+{
+	int dest_len, a;
+
+	dest_len = _strlen(dest);
+	for (a = 0; a < n && src[a] != '\0'; a++)
+		dest[dest_len + a] = src[a];
+	return (dest);
+}
+
+/**
+ * *str_concat - function to allocate space for sting concatnation
+ * @s1: array pointer to destination of string
+ * @s2: array pointer to source of string
+ * Return: return pointer to copy of string
  */
 
 char *str_concat(char *s1, char *s2)
 {
-
-	int len1 = strlen(s1);
-	int len2 = strlen(s2);
-
-	char *new_str = malloc(len1 + len2 +1);
+	char *ptr;
+	int size1, size2;
 
 	if (s1 == NULL)
 	{
@@ -25,21 +53,16 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
+	size1 = _strlen(s1);
+	size2 = _strlen(s2);
 
-	if (new_str == NULL)
+	ptr = malloc(((size1 + size2) + 1) * sizeof(char));
+	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-
-
-	memcpy(new_str, s1, len1);
-
-
-	memcpy(new_str + len1, s2, len2);
-
-
-	new_str[len1 + len2] = '\0';
-
-	return (new_str);
+	_strncat(ptr, s1, size1);
+	_strncat(ptr, s2, size2);
+	ptr += '\0';
+	return (ptr);
 }
-
