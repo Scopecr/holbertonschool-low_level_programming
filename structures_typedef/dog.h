@@ -1,9 +1,16 @@
-#include <stdlib.h>
-#include <stdio.h>
-
-typedef struct dog(char *name, float age, char *owner)
+#ifndef DOG
+#define DOG
+/**
+ * struct dog - definde the data types
+ * @name: string character
+ * @age: float
+ * @owner: strin character
+ */
+struct dog
 {
-    dog.name =
-    dog.age =
-    dog.owner =
-}
+char *name;
+float age;
+char *owner;
+};
+
+#endif
