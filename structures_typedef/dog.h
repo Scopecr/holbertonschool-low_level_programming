@@ -1,9 +1,10 @@
-#include <stdlib.h>
-#include <stdio.h>
+#ifndef DOG
+#define DOG
 
-typedef struct dog(char *name, float age, char *owner)
+struct dog(char *name, float age, char *owner)
 {
-    dog.name =
-    dog.age =
-    dog.owner =
+    dog.name = 
+    dog.age = 
+    dog.owner = 
 }
+#endif
