@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-typedef struct dog
+typedef struct dog(char *name, float age, char *owner)
 {
-    dog.name = char *
-    dog.age = float
-    dog.owner = char *
+    dog.name =
+    dog.age =
+    dog.owner =
 }
