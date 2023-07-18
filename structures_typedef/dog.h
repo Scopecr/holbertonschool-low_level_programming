@@ -7,12 +7,12 @@
  * @age: float
  * @owner: strin character
  */
-struct dog struct dog_t
+struct dog
 {
 char *name;
 float age;
 char *owner;
-};
+} dog_t;
 
 /*prototypes*/
 void init_dog(struct dog *d, char *name, float age, char *owner);
