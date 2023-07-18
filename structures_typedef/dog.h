@@ -2,12 +2,12 @@
 #define DOG
 /**
  * struct dog - definde the data types
- * struct dog_t - second struct name
+ * struct dog_t - second strct name
  * @name: string character
  * @age: float
  * @owner: strin character
  */
-struct dog
+typedef struct dog
 {
 char *name;
 float age;
