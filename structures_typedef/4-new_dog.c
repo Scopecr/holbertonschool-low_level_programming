@@ -6,7 +6,6 @@
 * @age: age of the dog
 * @owner: owner of the dog
 * strcpy - copy the name of owner and dog
-* 
 */
 dog_t *now_dog(char *name, float age, char *owner)
 {
