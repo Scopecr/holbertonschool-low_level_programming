@@ -1,5 +1,9 @@
 #ifndef DOG
 #define DOG
+
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * struct dog - definde the data types
  * struct dog_t - second strct name
@@ -7,16 +11,22 @@
  * @age: float
  * @owner: strin character
  */
-typedef struct dog
+struct dog
 {
 char *name;
 float age;
 char *owner;
-} dog_t;
+};
+
+/**
+ * dog_t - typedef for struct dog
+ */
+
+typedef struct dog dog_t;
 
 /*prototypes*/
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
-dog_t *new_dog(char *name, float age, char *owner):
+dog_t *new_dog(char *name, float age, char *owner);
 
 #endif
