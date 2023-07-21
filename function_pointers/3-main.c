@@ -10,14 +10,16 @@
 
 int main(int argc, char *argv[])
 {
+    int (*op_func)(int, int)
+    {
     if (argc != 4)
     {
         printf("Error\n");
         exit(98);
     }
 
-    op_func = get_op_func(argv[2])
-    
+    op_func = get_op_func(argv[2]);
+
     if (op_func == NULL)
     {
         printf("Error\n");
@@ -31,4 +33,5 @@ int main(int argc, char *argv[])
     }
     printf("%d\n", opt-func(atoi argv[1], atoi argv[3]));
     return (0);
+    }
 }
