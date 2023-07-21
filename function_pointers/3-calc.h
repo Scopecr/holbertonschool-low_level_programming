@@ -1,7 +1,7 @@
 #ifndef CALC
 #define CALC
 
-
+#include <stdlib.h
 #include<stdio.h>
 
 int op_add(int a, int b);
