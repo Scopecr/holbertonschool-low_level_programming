@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
         printf("Error\n");
         exit(98);
     }
+    if (op_func == NULL)
     {
         printf("Error\n");
         exit(99);
