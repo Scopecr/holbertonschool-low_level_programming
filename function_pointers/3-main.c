@@ -1,5 +1,12 @@
 #include "3-calc.h"
 
+/**
+*main function- iniciates the main program
+*@argc: counts the number of arguments
+*@argv: vector of strings
+*Rerturn - 0 success
+*/
+
 int main(int argc, char *argv[])
 {
     if (argc != 4)
