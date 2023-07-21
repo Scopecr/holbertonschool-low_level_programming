@@ -10,8 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-    int (*op_func)(int, int)
-    {
+    
     if (argc != 4)
     {
         printf("Error\n");
@@ -33,5 +32,4 @@ int main(int argc, char *argv[])
     }
     printf("%d\n", op-func(atoi argv[1], atoi argv[3]));
     return (0);
-    }
 }
