@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
         printf("Error\n");
         exit(99);
     }
-    if ((atoi argv[2] == atoi ('/') || atoi(argv[2]) = atoi('%')) && atoi (argv[3] == 0))
+    if ((atoi argv[2] == atoi('/') || atoi(argv[2]) = atoi('%')) && atoi(argv[3] == 0))
     {
         printf("Error\n");
         exit(100);
