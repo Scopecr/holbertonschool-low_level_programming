@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
-
 /**
  * print_list - prints all the list of the string
  * @h: pointer to the list_t list to point
