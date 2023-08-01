@@ -1,4 +1,4 @@
-#ifndef LISTS
+#ifdef LISTS
 #define LISTS
 
 /**
