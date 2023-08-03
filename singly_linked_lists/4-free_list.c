@@ -1,27 +1,21 @@
 #include "lists.h"
 
 /**
- *free_list - a fucntion that frees a list
- *@head: pointer to the start of a list
+ * free_list - adds a new node to the top of the list.
+ *
+ * @head: the list given to us.
+ *
+ * Return: nothing.
  */
 void free_list(list_t *head)
 {
+	list_t *freelist;
 
-	list_t *temp;
-
-	if (head == NULL)
+	while (head)
 	{
+		freelist = (*head).next;
+		free((*head).str);
 		free(head);
-		return;
+		head = freelist;
 	}
-
-	temp = head;
-	while (head->next != NULL)
-	{
-		head = head->next;
-		free(temp);
-		temp = head;
-	}
-	head = head->next;
-	free(head);
 }
