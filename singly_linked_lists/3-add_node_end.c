@@ -5,7 +5,8 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *b_node(list_t *)malloc(list_t));
+	list_t *b_node = malloc(sizeof(list_t));
+	list_t *temp;
 
 	if (b_node == NULL || str == NULL)
 		return (NULL);
