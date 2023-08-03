@@ -1,9 +1,9 @@
 #include "lists.h"
 /*
- **add_node - adds new node to lists
- *@head: a pointer to a pointer
- *@str: pointer to contant character
- *Return: address of the new element null
+ * add_node - adds new node to lists
+ * @head: a pointer to a pointer
+ * @str: pointer to contant character
+ * Return: address of the new element null
  */
 
 list_t *add_node(list_t **head, const char *str)
