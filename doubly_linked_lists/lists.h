@@ -1,6 +1,7 @@
 #ifndef _DOUBB
 #define _DOUBB
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * struct dlistint_s - doubly linked list
