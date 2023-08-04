@@ -1,6 +1,6 @@
 #include "lists.h"
 /*
-* add_node - adds a new node
+* add_node - adds a new node to the top of the list.
 * @head: a pointer to a pointer
 * @str: pointer to contant character
 * Return: address of the new element null
