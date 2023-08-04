@@ -3,6 +3,7 @@
  * add_dnodeint_end - adds end node to the dlist
  * @enode is the ponter to new node
  * @n: interger variable
+ * @head: pointer for the start of node
  * Return: 1 if error enode if success
  */
 
@@ -26,7 +27,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	else
 	{
 	dlistint_t *current = *head;
-	
+
 	while (current->next != NULL)
 	{
 		current = current->next;
