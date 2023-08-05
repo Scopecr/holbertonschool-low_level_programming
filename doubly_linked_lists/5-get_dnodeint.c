@@ -2,7 +2,6 @@
 /**
  * get_dnodeint_at_index - function that gets the nth node
  * @i: pointer to the head pointer
- * @count: vatiable to count how many nodes i have
  *
  * Returns: NULL if node does not exist
 */
