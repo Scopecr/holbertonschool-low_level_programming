@@ -6,7 +6,7 @@
  */
 int main(void) 
 {
-	putchar("and that piece of art is useful - Dora Kopar, 2015-20-19\n");
-	return;
+	putchar("and that piece of art is useful\" - Dora Kopar, 2015-20-19\n");
+	return (1);
 }
 
