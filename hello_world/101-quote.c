@@ -6,5 +6,5 @@ int main()
 
 	write(2, message, sizeof(message) - 1);
 
-	return 1;
+	return (1);
 }
