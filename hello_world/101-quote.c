@@ -6,7 +6,7 @@
  */
 int main(void) 
 {
-	putchar('and that piece of art is useful\" \- Dora Kopar, 2015\-20\-19\n');
+	putchar('and that piece of art is useful\" %c Dora Kopar, 2015%c20%c19\n', 45);
 	return (1);
 }
 
