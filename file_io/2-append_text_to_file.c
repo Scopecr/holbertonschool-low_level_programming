@@ -3,7 +3,7 @@
  * append_text_to_file - function that appends a text file
  * @filename: pointer to the file to be appended
  * @text_content: content to be added to file
- * 
+ *
  * Return: if NULL -1 fails
  *	if file exist return 1
 */
@@ -16,9 +16,9 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (-1);
 	}
 
-	fd = open(filename, O_WRONLY | O_APPEND);
+	fd = open(filename, O_RDWR | O_APPEND);
 	w = write(fd, text_content, len);
-	
+
 	if (text_content != NULL)
 	{
 		for (len = 0; text_content[len];)
@@ -30,6 +30,6 @@ int append_text_to_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	close (fd);
+	close(fd);
 	return (1);
 }
