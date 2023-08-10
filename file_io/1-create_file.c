@@ -5,8 +5,8 @@
  * @filename: pointer to file to be created
  * @text_content: pointer to content to be written
  * Return: -1 if NULL or fails
- * 	1 if complete
- * 
+ *	1 if complete
+ *
 */
 int create_file(const char *filename, char *text_content)
 {
