@@ -2,14 +2,14 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	/**
-	 * read_textfile - free the alocated spaces on the list
-	 *
-	 * @filename: file to be read
-	 * @letters: number of letters to be read
-	 * Return: w - actual number of bytes read and printed
-	 * 0 when function fails or filename is NULL
-	*/
+/**
+ * read_textfile - free's the alocated space of the list.
+ *
+ * @filename: the name of the file provided.
+ * @letters: the letters that the text has.
+ *
+ * Return: pointer to node.
+ */
 	char *buf;
 	ssize_t fd;
 	ssize_t w;
