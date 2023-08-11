@@ -3,7 +3,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	/**
-	 * read_textfile - free's the alocated space of the list.
+	 * read_textfile - function that reads file content
 	 * @filename: file to be read
 	 * @letters: number of letters to be read
 	 * Return: w - actual number of bytes read and printed
