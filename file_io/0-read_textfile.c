@@ -1,7 +1,5 @@
 #include "main.h"
 
-ssize_t read_textfile(const char *filename, size_t letters)
-{
 /**
  * read_textfile - free's the alocated space of the list.
  *
@@ -10,21 +8,40 @@ ssize_t read_textfile(const char *filename, size_t letters)
  *
  * Return: pointer to node.
  */
-	char *buf;
-	ssize_t fd;
-	ssize_t w;
-	ssize_t t;
+ssize_t read_textfile(const char *filename, size_t letters)
+{
+	ssize_t OP, RD, WR;
+	char *CurrLet;
 
-	fd = open(filename, O_RDONLY);
-	if (fd == -1)
+	if (filename == NULL)
 	{
 		return (0);
 	}
-	buf = malloc(sizeof(char) * letters);
-	t = read(fd, buf, letters);
-	w = write(STDOUT_FILENO, buf, t);
 
-	free(buf);
-	close(fd);
-	return (w);
+	CurrLet = malloc(sizeof(char) * letters);
+	if (CurrLet == NULL)
+	{
+		return (0);
+	}
+
+	OP = open(filename, O_RDONLY);
+	RD = read(OP, CurrLet, letters);
+	WR = write(STDOUT_FILENO, CurrLet, RD);
+
+	if (OP == -1 || RD == -1)
+	{
+		free(CurrLet);
+		return (0);
+	}
+
+	if (WR == -1 || WR != RD)
+	{
+		free(CurrLet);
+		return (0);
+	}
+
+	free(CurrLet);
+	close(OP);
+
+	return (WR);
 }
