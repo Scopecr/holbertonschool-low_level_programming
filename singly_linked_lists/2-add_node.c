@@ -1,10 +1,12 @@
 #include "lists.h"
-/*
-* add_node - adds a new node to the top of the list.
-* @head: a pointer to a pointer
-* @str: pointer to contant character
-* Return: address of the new element null
-*/
+/**
+ * add_node - adds a new node to the top of the list.
+ *
+ * @head: the list given to us.
+ * @str: name of node
+ *
+ * Return: head.
+ */
 
 list_t *add_node(list_t **head, const char *str)
 {
