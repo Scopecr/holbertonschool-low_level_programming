@@ -20,12 +20,12 @@ int binary_search(int *array, size_t size, int value)
 		if (array[half] < value)
 		{
 			low = half + 1;
-			print_array(array, low, high + 1);
+			printf(array, low, high + 1);
 		}
 		else if (array[half] > value)
 		{
 			high = half - 1;
-			print_array(array, low, high + 1);
+			printf(array, low, high + 1);
 		}
 		else
 			return (array[half]);
