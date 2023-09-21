@@ -1,7 +1,4 @@
 #include "search_algos.h"
-
-void print_array(int *array, size_t i, size_t size);
-
 /**
  * binary_search - binary search algorithm in a string
  * @array: list of elements
@@ -16,7 +13,7 @@ int binary_search(int *array, size_t size, int value)
 	if (array == NULL || value == 0)
 		return (-1);
 
-	print_array(array, low, size);
+	printf(array, low, size);
 	while (low < high)
 	{
 		half = (low + high) / 2;
@@ -35,23 +32,3 @@ int binary_search(int *array, size_t size, int value)
 	}
 	return (-1);
 }
-
-/**
- * print_array - print all elements in an array
- * @array: list of elements
- * @i: index to init
- * @size: size of the array
- */
-void print_array(int *array, size_t i, size_t size)
-{
-	printf("Searching in array: ");
-	while (i < size)
-	{
-		if (i + 1 == size)
-			printf("%d ", array[i]);
-		else
-			printf("%d, ", array[i]);
-		i++;
-	} printf("\n");
-}
-
